@@ -1,0 +1,3 @@
+vhdl isim_temp "Stoper.vhd"
+vhdl isim_temp "Stoper_TB.vhd"
+vhdl isim_temp "Counter.vhf"

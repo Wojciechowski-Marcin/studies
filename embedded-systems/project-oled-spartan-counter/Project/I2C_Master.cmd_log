@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../../Users/lab/Downloads/I2C_Master/I2C_Master.vhd -prj Test_oled -o I2C_Master.spl -module I2C_Master -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e I2C_Master.spl C:/XilinxPrj/OLED/Test_oled/I2C_Master.sym 

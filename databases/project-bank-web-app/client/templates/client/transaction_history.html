@@ -1,0 +1,30 @@
+{% extends "client/base.html" %}
+{% block content %}
+<h1>Transaction history</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Source account number</th>
+            <th scope="col">Destination account number</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Title</th>
+            <th scope="col">Date</th>
+        </tr>
+    </thead>
+    {% for transaction in transactions %}
+    <tbody>
+        <tr>
+            <td>{{ transaction.source_bank_account.account_number }}</td>
+            <td>{{ transaction.destination_bank_account_number }}</td>
+            {% if account.account_number == transaction.destination_bank_account_number %}
+            <td>{{ transaction.amount }}</td>
+            {% else %}
+            <td>-{{ transaction.amount }}</td>
+            {% endif %}
+            <td>{{ transaction.title }}</td>
+            <td>{{ transaction.send_date }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

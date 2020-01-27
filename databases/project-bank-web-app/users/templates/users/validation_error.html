@@ -1,0 +1,9 @@
+{% extends "client/base.html" %}
+{% block content %}
+<h2>Access restricted!</h2>
+<div class="border-top pt-3">
+    <small class="text-muted">
+        <a href="{% url 'home' %}" class="btn btn-info">Home</a>
+    </small>
+</div>
+{% endblock content %}

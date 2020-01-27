@@ -1,0 +1,3 @@
+vhdl work "OLED_Ctrl.vhd"
+vhdl work "I2C_Master.vhd"
+vhdl work "top.vhf"

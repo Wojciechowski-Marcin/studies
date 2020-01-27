@@ -1,0 +1,28 @@
+Command line:
+   Stoper_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50210
+
+Mon May 20 11:48:56 2019
+
+
+ Elaboration Time: 0.0624 sec
+
+ Current Memory Usage: 818.479 Meg
+
+ Total Signals          : 24
+ Total Nets             : 77
+ Total Signal Drivers   : 13
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 5
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 560
+
+ Total Simulation Time: 0.078 sec
+
+ Current Memory Usage: 818.479 Meg
+
+Mon May 20 11:53:43 2019
+

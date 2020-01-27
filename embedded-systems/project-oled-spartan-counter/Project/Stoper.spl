@@ -1,0 +1,12 @@
+[Inputs]
+E0
+F0
+Clk
+DO_Rdy
+=DO[7:0]=
+[Outputs]
+=First_digit[3:0]=
+=Second_digit[3:0]=
+=Third_digit[3:0]=
+=Fourth_digit[3:0]=
+[BiDir]

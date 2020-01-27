@@ -1,0 +1,107 @@
+{% extends "worker/sidebar_base.html" %}
+{% block content %}
+<h3>Request details</h3>
+<table class="table">
+    <tbody>
+        <tr>
+            <th scope="row">Request title</th>
+            <td>{{ user_request.request_title }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Request type</th>
+            <td>{{ user_request.request_type }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Request text</th>
+            <td>{{ user_request.request_text }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Credit amount</th>
+            <td>{{ user_request.credit_amount|default_if_none:"&nbsp;" }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Credit account number</th>
+            <td>{{ user_request.credit_account_number|default_if_none:"&nbsp;" }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Date sent</th>
+            <td>{{ user_request.send_date }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Is verified?</th>
+            <td>{{ user_request.is_verified }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Is accepted?</th>
+            <td>{{ user_request.is_accepted|default_if_none:"&nbsp;" }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Verified by</th>
+            <td>{{ user_request.worker_data|default_if_none:"&nbsp;" }}</td>
+        </tr>
+    </tbody>
+</table>
+<h3>User information</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Username</th>
+            <td>{{ user_request.client_data.username }}</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">First name</th>
+            <td>{{ user_request.client_data.first_name }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Last name</th>
+            <td>{{ user_request.client_data.last_name }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Birth day</th>
+            <td>{{ user_request.client_data.birth_day }}</td>
+        </tr>
+        <tr>
+            <th scope="row">City</th>
+            <td>{{ user_request.client_data.address.city }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Date joined</th>
+            <td>{{ user_request.client_data.date_joined }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Earnings per month</th>
+            <td>{{ user_request.client_data.creditworthiness.earnings_per_month }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Working time</th>
+            <td>{{ user_request.client_data.creditworthiness.working_time }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Contract type</th>
+            <td>{{ user_request.client_data.creditworthiness.contract_type }}</td>
+        </tr>
+    </tbody>
+</table>
+<h3>User contact details</h3>
+<table class="table">
+    <tbody>
+        <tr>
+            <th scope="row">Telephone</th>
+            <td>{{ user_request.client_data.telephone }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Email</th>
+            <td>{{ user_request.client_data.email }}</td>
+        </tr>
+    </tbody>
+</table>
+<a href="{% url 'worker_home' rot=0 %}" class="btn btn-info" type="button">Back</a>
+{% if user_request.request_type != 'Normal request' and user_request.is_verified == False %}
+<a href="{% url 'request_confirm' rid=user_request.id %}" class="btn btn-success" type="button">Confirm</a>
+<a href="{% url 'request_decline' rid=user_request.id %}" class="btn btn-error" type="button">Decline</a>
+{% else %}
+<a href="{% url 'request_verify' rid=user_request.id %}" class="btn btn-info" type="button">Verify</a>
+{% endif %}
+{% endblock content %}

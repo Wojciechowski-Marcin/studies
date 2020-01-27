@@ -1,0 +1,30 @@
+{% extends "client/base.html" %}
+{% block content %}
+<h1>{{ header }}</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Request title</th>
+            <th scope="col">Date sent</th>
+            <th scope="col">Is verified?</th>
+            <th scope="col">Is accepted?</th>
+            <th scope="col">Verified by</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    {% for user_request in requests %}
+    <tbody>
+        <tr>
+            <td>{{ user_request.request_title }}</td>
+            <td>{{ user_request.send_date }}</td>
+            <td>{{ user_request.is_verified }}</td>
+            <td>{{ user_request.is_accepted|default_if_none:"&nbsp;" }}</td>
+            <td>{{ user_request.worker_data|default_if_none:"&nbsp;" }}</td>
+            <td>
+                <a href="{% url 'user_request_details' rid=user_request.id %}" class="btn btn-primary" type="button">Details</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}

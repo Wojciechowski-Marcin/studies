@@ -1,0 +1,43 @@
+{% extends "client/base.html" %}
+{% block content %}
+<h1>Card Info</h1>
+<table class="table">
+    <tbody>
+        <tr>
+            <th scope="col">Card number</th>
+            <td>{{ card.card_number }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Account number</th>
+            <td>{{ card.account_number.account_number }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Card validation value</th>
+            <td>{{ card.cvv }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Contacless payments?</th>
+            <td>{{ card.is_nfc }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Is active?</th>
+            <td>{{ card.is_active }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Transaction limit</th>
+            <td>{{ card.transaction_limit }}</td>
+        </tr>
+    </tbody>
+</table>
+<div class="form-group">
+    <a href="{% url 'account' oid=account.id %}" class="btn btn-info" type="button">
+        Back
+    </a>
+    <a href="{% url 'edit_card' oid=account.id coid=card.id %}" class="btn btn-primary" type="button">
+        Edit card
+    </a>
+    <a href="{% url 'delete_card' oid=account.id coid=card.id %}" class="btn btn-danger" type="button">
+        Delete card
+    </a>
+</div>
+{% endblock %}

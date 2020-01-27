@@ -1,0 +1,80 @@
+{% extends "client/base.html" %}
+{% block content %}
+<h1>Account Info</h1>
+<table class="table">
+    <tbody>
+        <tr>
+            <th scope="col">Account number</th>
+            <td>{{ account.account_number }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Balance</th>
+            <td>{{ account.balance }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Currency</th>
+            <td>{{ account.currency }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Account type</th>
+            <td>{{ account.account_type }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Transaction limit</th>
+            <td>{{ account.transaction_limit }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Is active?</th>
+            <td> {{ account.is_active }} </td>
+        </tr>
+        <tr>
+            <th scope="row">Creation date</th>
+            <td>{{ account.creation_date }}</td>
+        </tr>
+    </tbody>
+</table>
+<h2>Card list</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Card number</th>
+            <th scope="col">Transaction limit</th>
+            <th scope="col">Contactless payments?</th>
+            <th scope="col">Is active?</th>
+        </tr>
+    </thead>
+    {% for card in cards %}
+    <tbody>
+        <tr>
+            <th scope="row">
+                <a class="navbar-link" href="{% url 'card' oid=account.id coid=card.id %}">
+                    {{ card.card_number }}
+                </a>
+            </th>
+            <td>{{ card.transaction_limit }}</td>
+            <td>{{ card.is_nfc }}</td>
+            <td>{{ card.is_active }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<div class="form-group">
+    <a href="{% url 'home' %}" class="btn btn-info" type="button">
+        Back
+    </a>
+    <a href="{% url 'edit_account' oid=account.id %}" class="btn btn-primary" type="button">
+        Account settings
+    </a>
+    <a href="{% url 'transaction_history' oid=account.id %}" class="btn btn-primary" type="button">
+        Transaction history
+    </a>
+    <a href="{% url 'order_card' oid=account.id %}" class="btn btn-primary" type="button">
+        Order card
+    </a>
+    {% if account.balance >= 0 %}
+    <a href="{% url 'delete_account' oid=account.id %}" class="btn btn-danger" type="button">
+        Delete account
+    </a>
+    {% endif %}
+</div>
+{% endblock %}

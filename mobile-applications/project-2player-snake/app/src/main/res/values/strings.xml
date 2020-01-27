@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Snake</string>
+    <string name="difficulty_id">Difficulty_id</string>
+    <string name="obstacles_id">Obstacles_id</string>
+</resources>

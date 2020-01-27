@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#77B6EA</color>
+    <color name="colorPrimaryDark">#eb99a4</color>
+    <color name="colorAccent">#9b99c8</color>
+    <color name="cyan">#9cf6f6</color>
+    <color name="red">#eb99a4</color>
+    <color name="yellow">#fff6d9</color>
+    <color name="green">#88c2a9</color>
+    <color name="purple">#9b99c8</color>
+    <color name="blue">#77B6EA</color>
+    <color name="snakeHead1">#FE5F55</color>
+    <color name="snakeTail1">#EB99A4</color>
+    <color name="snakeHead2">#253C78</color>
+    <color name="snakeTail2">#2B59C3</color>
+    <color name="transparent">#80000000</color>
+    <color name="obstacleColor">#000000</color>
+</resources>

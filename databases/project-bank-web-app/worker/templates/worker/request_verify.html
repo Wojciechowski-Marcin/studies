@@ -1,0 +1,17 @@
+{% extends "client/base.html" %}
+{% block content %}
+<div class="content-section">
+    <form method="POST">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">Verify request</legend>
+            <p>Are you sure you want to verify request "{{ user_request }}"?</p>
+            <p>{{ user_request.request_text }}</p>
+        </fieldset>
+        <div class="form-group">
+            <a href="{% url 'request_details' rid=user_request.id %}" class="btn btn-primary" type="button">Cancel</a>
+            <button class="btn btn-warning" type="submit">Verify</button>
+        </div>
+    </form>
+</div>
+{% endblock content %}

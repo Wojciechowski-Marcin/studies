@@ -1,0 +1,91 @@
+{% extends "client/base.html" %}
+{% block content %}<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Username</th>
+            <td>{{ user.username }}</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">First name</th>
+            <td>{{ user.first_name }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Last name</th>
+            <td>{{ user.last_name }}</td>
+        </tr>
+        <tr>
+            <th scope="row">PESEL</th>
+            <td>{{ user.pesel }}</td>
+        </tr>
+        </tr>
+        <tr>
+            <th scope="row">Birth day</th>
+            <td>{{ user.birth_day }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Telephone</th>
+            <td>{{ user.telephone }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Email</th>
+            <td>{{ user.email }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Mother's maiden name</th>
+            <td>{{ user.mothers_maiden_name|default_if_none:"Not provided" }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Street</th>
+            <td>{{ user.address.street }}</td>
+        </tr>
+        <tr>
+            <th scope="row">House number</th>
+            <td>{{ user.address.house_nr }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Apartment number</th>
+            <td>{{ user.address.apartment_nr|default_if_none:"&nbsp;" }}</td>
+        </tr>
+        <tr>
+            <th scope="row">City</th>
+            <td>{{ user.address.city.city }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Postal code</th>
+            <td>{{ user.address.city.postal_code }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Date joined</th>
+            <td>{{ user.date_joined }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Earnings per month</th>
+            <td>{{ user.creditworthiness.earnings_per_month }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Working time</th>
+            <td>{{ user.creditworthiness.working_time }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Contract type</th>
+            <td>{{ user.creditworthiness.contract_type }}</td>
+        </tr>
+    </tbody>
+</table>
+<div class="form-group">
+    <a href="{% url 'edit_profile' %}" class="btn btn-primary" type="submit">
+        Edit profile
+    </a>
+    <a href="{% url 'change_password' %}" class="btn btn-primary" type="submit">
+        Change password
+    </a>
+    <a href="{% url 'creditworthiness' %}" class="btn btn-primary" type="submit">
+        Enter working data
+    </a>
+    <a href="{% url 'delete_user' %}" class="btn btn-danger" type="button">
+        Delete user
+    </a>
+</div>
+{% endblock content %}

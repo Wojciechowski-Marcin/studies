@@ -1,0 +1,7 @@
+vhdl work "C:\XilinxPrj\OLED\Test_oled\Stoper.vhd"
+vhdl work "C:\XilinxPrj\OLED\Test_oled\Selector.vhd"
+vhdl work "C:\XilinxPrj\OLED\Test_oled\OLED_Ctrl.vhd"
+vhdl work "C:\XilinxPrj\OLED\Test_oled\I2C_Master.vhd"
+vhdl work "C:\XilinxPrj\OLED\Test_oled\Main.vhf"
+vhdl work "C:\XilinxPrj\OLED\Test_oled\Counter.vhf"
+vhdl work "C:\XilinxPrj\OLED\Test_oled\top.vhf"

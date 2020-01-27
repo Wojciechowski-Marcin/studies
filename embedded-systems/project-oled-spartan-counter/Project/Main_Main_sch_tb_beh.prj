@@ -1,0 +1,6 @@
+vhdl work "Selector.vhd"
+vhdl work "OLED_Ctrl.vhd"
+vhdl work "I2C_Master.vhd"
+vhdl work "Counter.vhf"
+vhdl work "Main.vhf"
+vhdl work "tbw_main.vhd"

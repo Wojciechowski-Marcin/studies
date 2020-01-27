@@ -1,0 +1,5 @@
+set -tmpdir "C:/XilinxPrj/OLED/Test_oled/xst/projnav.tmp"
+set -xsthdpdir "C:/XilinxPrj/OLED/Test_oled/xst"
+elaborate
+-ifn Selector.prj
+-ifmt mixed

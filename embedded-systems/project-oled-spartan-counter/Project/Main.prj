@@ -1,0 +1,7 @@
+vhdl work "Stoper.vhd"
+vhdl work "Selector.vhd"
+vhdl work "OLED_Ctrl.vhd"
+vhdl work "I2C_Master.vhd"
+vhdl work "Main.vhf"
+vhdl work "Counter.vhf"
+vhdl work "top.vhf"

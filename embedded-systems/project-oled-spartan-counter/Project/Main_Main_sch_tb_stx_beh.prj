@@ -1,0 +1,7 @@
+vhdl isim_temp "Stoper.vhd"
+vhdl isim_temp "Selector.vhd"
+vhdl isim_temp "OLED_Ctrl.vhd"
+vhdl isim_temp "I2C_Master.vhd"
+vhdl isim_temp "Main.vhf"
+vhdl isim_temp "tbw_main.vhd"
+vhdl isim_temp "Counter.vhf"

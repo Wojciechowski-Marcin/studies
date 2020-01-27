@@ -1,0 +1,14 @@
+sch2sym -intstyle ise -family spartan3e -refsym Counter C:/XilinxPrj/OLED/Test_oled/Counter.sch C:/XilinxPrj/OLED/Test_oled/Counter.sym 
+sch2sym -intstyle ise -family spartan3e -refsym Counter C:/XilinxPrj/OLED/Test_oled/Counter.sch C:/XilinxPrj/OLED/Test_oled/Counter.sym 
+sch2sym -intstyle ise -family spartan3e -refsym Counter C:/XilinxPrj/OLED/Test_oled/Counter.sch C:/XilinxPrj/OLED/Test_oled/Counter.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Counter_drc.vhf -w C:/XilinxPrj/OLED/Test_oled/Counter.sch 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Counter_drc.vhf -w C:/XilinxPrj/OLED/Test_oled/Counter.sch 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Counter_drc.vhf -w C:/XilinxPrj/OLED/Test_oled/Counter.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym Counter C:/XilinxPrj/OLED/Test_oled/Counter.sch C:/XilinxPrj/OLED/Test_oled/Counter.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym Counter C:/XilinxPrj/OLED/Test_oled/Counter.sch C:/XilinxPrj/OLED/Test_oled/Counter.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym Counter C:/XilinxPrj/OLED/Test_oled/Counter.sch C:/XilinxPrj/OLED/Test_oled/Counter.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym Counter C:/XilinxPrj/OLED/Test_oled/Counter.sch C:/XilinxPrj/OLED/Test_oled/Counter.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym Counter C:/XilinxPrj/OLED/Test_oled/Counter.sch C:/XilinxPrj/OLED/Test_oled/Counter.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym Counter C:/XilinxPrj/OLED/Test_oled/Counter.sch C:/XilinxPrj/OLED/Test_oled/Counter.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym Counter C:/XilinxPrj/OLED/Test_oled/Counter.sch C:/XilinxPrj/OLED/Test_oled/Counter.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym Counter C:/XilinxPrj/OLED/Test_oled/Counter.sch C:/XilinxPrj/OLED/Test_oled/Counter.sym 

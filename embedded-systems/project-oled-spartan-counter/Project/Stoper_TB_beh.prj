@@ -1,0 +1,3 @@
+vhdl work "Stoper.vhd"
+vhdl work "Stoper_TB.vhd"
+vhdl work "Counter.vhf"

@@ -1,0 +1,6 @@
+﻿  SDiZO1.cpp
+c:\users\marcin\onedrive\studia\ii.2\visual\sdizo1\sdizo1\sdizo1.cpp(63): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\marcin\onedrive\studia\ii.2\visual\sdizo1\sdizo1\sdizo1.cpp(206): warning C4018: '<': signed/unsigned mismatch
+c:\users\marcin\onedrive\studia\ii.2\visual\sdizo1\sdizo1\sdizo1.cpp(239): warning C4018: '<': signed/unsigned mismatch
+c:\users\marcin\onedrive\studia\ii.2\visual\sdizo1\sdizo1\sdizo1.cpp(91): warning C4715: 'main_menu': not all control paths return a value
+  SDiZO1.vcxproj -> C:\Users\Marcin\OneDrive\Studia\II.2\Visual\SDiZO1\Debug\SDiZO1.exe

@@ -1,0 +1,30 @@
+{% extends "client/base.html" %}
+{% block sidebar %}
+<div class="col-md-4">
+    <div class="content-section">
+    <p class='text-muted'>Request types
+        <ul class="list-group">
+        <a href="{% url 'worker_home' rot=0 %}">
+            <li class="list-group-item list-group-item-light">Normal requests</li>
+        </a>
+        <a href="{% url 'worker_home' rot=1 %}">
+            <li class="list-group-item list-group-item-light">Credit requests</li>
+        </a>
+        <a href="{% url 'worker_home' rot=2 %}">
+            <li class="list-group-item list-group-item-light">Credit card requests</li>
+        </a>
+        <a href="{% url 'worker_home' rot=3 %}">
+            <li class="list-group-item list-group-item-light">Verified requests</li>
+        </a>
+        </ul>
+    </p>
+    <p class='text-muted'>Transaction history
+        <ul class="list-group">
+        <a href="{% url 'worker_transaction_history' %}">
+            <li class="list-group-item list-group-item-light">Transaction history</li>
+        </a>
+        </ul>
+    </p>
+    </div>
+</div>
+{% endblock sidebar %}

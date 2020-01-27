@@ -1,0 +1,48 @@
+{% extends "client/base.html" %}
+{% block content %}
+<h1>Account List</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Account number</th>
+            <th scope="col">Balance</th>
+            <th scope="col">Currency</th>
+            <th scope="col">Account type</th>
+        </tr>
+    </thead>
+    {% for account in accounts %}
+    {% if account.is_active %}
+    <tbody>
+        <tr>
+            <th scope="row">
+                <a class="navbar-link" href="{% url 'account' oid=account.id %}">
+                    {{ account.account_number }}
+                </a>
+            </th>
+            <td>{{ account.balance }}</td>
+            <td>{{ account.currency }}</td>
+            <td>{{ account.account_type }}</td>
+        </tr>
+    {% endif %}
+    {% endfor %}
+    </tbody>
+</table>
+<div class="form-group">
+    <a href="{% url 'make_transaction' %}" class="btn btn-primary" type="button">
+        Make transaction
+    </a>
+{% if accounts|length < 5 %} 
+    <a href="{% url 'open_account' %}" class="btn btn-primary" type="button">
+        Open account
+    </a>
+    <a href="{% url 'open_credit_account' %}" class="btn btn-primary" type="button">
+        Request credit
+    </a>
+    <a href="{% url 'request_credit_card' %}" class="btn btn-primary" type="button">
+        Request credit card
+    </a>
+{% else %}
+    Account limit reached.
+{% endif %}
+</div>
+{% endblock %}

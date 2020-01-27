@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/XilinxPrj/OLED/Test_oled/Stoper_TB_isim_beh.exe" -prj "C:/XilinxPrj/OLED/Test_oled/Stoper_TB_beh.prj" "work.Stoper_TB" 

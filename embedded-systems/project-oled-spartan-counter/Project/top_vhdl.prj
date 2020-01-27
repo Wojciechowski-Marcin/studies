@@ -1,0 +1,3 @@
+vhdl work "C:\XilinxPrj\OLED\Test_oled\OLED_Ctrl.vhd"
+vhdl work "C:\XilinxPrj\OLED\Test_oled\I2C_Master.vhd"
+vhdl work "C:\XilinxPrj\OLED\Test_oled\top.vhf"

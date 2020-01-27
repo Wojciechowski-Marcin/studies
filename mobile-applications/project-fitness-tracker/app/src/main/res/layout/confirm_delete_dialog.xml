@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <Button
+            android:text="@string/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ConfirmDeleteButton"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView33" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="@+id/textView33"/>
+    <Button
+            android:text="@string/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CancelDeleteButton"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView33"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="@+id/textView33"/>
+    <TextView
+            android:text="Remove all saved data so far?"
+            android:textSize="15dp"
+            android:layout_width="239dp"
+            android:layout_height="44dp"
+            android:padding="10dp"
+            android:id="@+id/textView33"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="95dp" android:layout_marginEnd="95dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="82dp"/>
+</android.support.constraint.ConstraintLayout>

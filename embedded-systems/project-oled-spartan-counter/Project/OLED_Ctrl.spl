@@ -1,0 +1,13 @@
+[Inputs]
+Clk
+Reset
+WriteByte
+I2C_FIFO_Full
+I2C_Busy
+=Byte[7:0]=
+[Outputs]
+Busy
+I2C_Go
+I2C_FIFO_Push
+=I2C_FIFO_DI[7:0]=
+[BiDir]

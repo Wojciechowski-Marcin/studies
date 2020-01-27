@@ -1,0 +1,12 @@
+[Inputs]
+Clk
+Reset
+Busy
+=First_number[3:0]=
+=Second_number[3:0]=
+=Third_number[3:0]=
+=Fourth_number[3:0]=
+[Outputs]
+WriteByte
+=Result[7:0]=
+[BiDir]

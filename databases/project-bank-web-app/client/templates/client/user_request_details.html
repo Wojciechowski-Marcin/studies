@@ -1,0 +1,45 @@
+{% extends "client/base.html" %}
+{% block content %}
+<h3>Request details</h3>
+<table class="table">
+    <tbody>
+        <tr>
+            <th scope="row">Request title</th>
+            <td>{{ user_request.request_title|default_if_none:"&nbsp;" }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Request type</th>
+            <td>{{ user_request.request_type }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Request text</th>
+            <td>{{ user_request.request_text|default_if_none:"&nbsp;" }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Credit amount</th>
+            <td>{{ user_request.credit_amount|default_if_none:"&nbsp;" }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Credit account number</th>
+            <td>{{ user_request.credit_account_number|default_if_none:"&nbsp;" }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Date sent</th>
+            <td>{{ user_request.send_date }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Is verified?</th>
+            <td>{{ user_request.is_verified }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Is accepted?</th>
+            <td>{{ user_request.is_accepted|default_if_none:"&nbsp;" }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Verified by</th>
+            <td>{{ user_request.worker_data|default_if_none:"&nbsp;" }}</td>
+        </tr>
+    </tbody>
+</table>
+<a href="{% url 'my_requests' %}" class="btn btn-info" type="button">Back</a>
+{% endblock content %}

@@ -1,0 +1,4 @@
+﻿  MyForm.cpp
+d:\it's just me\programowanie\memorygame\memorygame\memorygame\myform.h(31): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+  MyForm.obj : napotkano moduł MSIL; konsolidowanie przyrostowe jest wyłączone dla modułów MSIL; zostanie wykonana pełna konsolidacja
+  MemoryGame.vcxproj -> D:\It's Just Me\Programowanie\MemoryGame\MemoryGame\Debug\MemoryGame.exe

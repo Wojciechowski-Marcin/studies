@@ -1,0 +1,51 @@
+[
+    {
+        "model": "client.city",
+        "pk": 1,
+        "fields": {
+            "postal_code": "50-370",
+            "city": "Wroc\u0142aw"
+        }
+    },
+    {
+        "model": "client.address",
+        "pk": 0,
+        "fields": {
+            "street": "wybrze\u017ce Stanis\u0142awa Wyspia\u0144skiego",
+            "house_nr": 27,
+            "apartment_nr": null,
+            "city": 1
+        }
+    },
+    {
+        "model": "client.customuser",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$120000$aMhI62OIuyvs$4WyMprSmxcgUapDbC7kvYKgE/gjH6pv9n3o60V9bqVM=",
+            "last_login": null,
+            "is_superuser": true,
+            "username": "Wojciechowski-Marcin",
+            "first_name": "Marcin",
+            "last_name": "Wojciechowski",
+            "email": "wojc.marcin@gmail.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2019-01-14T09:01:19.141Z",
+            "address": 0,
+            "pesel": "1234567891",
+            "mothers_maiden_name": "",
+            "birth_day": "2000-11-11T11:11:00Z",
+            "telephone": "123456789",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "sites.site",
+        "pk": 1,
+        "fields": {
+            "domain": "wojc-marcin.info.pl",
+            "name": "Wojciechowski Marcin"
+        }
+    }
+]

@@ -1,0 +1,125 @@
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -uc OLED_J4.ucf -p xc3s500e-fg320-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -uc OLED_J4.ucf -p xc3s500e-fg320-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -uc OLED_J4.ucf -p xc3s500e-fg320-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf GenIO.ucf -ucf OLED_J4.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -uc OLED_J4.ucf -p xc3s500e-fg320-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf GenIO.ucf -ucf OLED_J4.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -uc OLED_J4.ucf -p xc3s500e-fg320-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf GenIO.ucf -ucf OLED_J4.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc OLED_J4.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf OLED_J4.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc OLED_J4.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf OLED_J4.ucf -ucf GenIO.ucf 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc OLED_J4.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf OLED_J4.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc OLED_J4.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf OLED_J4.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc OLED_J4.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf OLED_J4.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc OLED_J4.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf OLED_J4.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc OLED_J4.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf OLED_J4.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc OLED_J4.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf OLED_J4.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc OLED_J4.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf OLED_J4.ucf -ucf GenIO.ucf 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc OLED_J4.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 Main.ngc Main.ngd  
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc OLED_J4.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 Main.ngc Main.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc OLED_J4.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf OLED_J4.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc OLED_J4.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf OLED_J4.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc OLED_J4.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf OLED_J4.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc OLED_J4.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf OLED_J4.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc OLED_J4.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf OLED_J4.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/XilinxPrj/OLED/Test_oled/Main.xst" -ofn "C:/XilinxPrj/OLED/Test_oled/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc OLED_J4.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf OLED_J4.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 

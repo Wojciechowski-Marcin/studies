@@ -1,0 +1,2 @@
+vhdl isim_temp "OLED_Ctrl.vhd"
+vhdl isim_temp "tbw_OLED_Ctrl.vhd"

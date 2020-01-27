@@ -1,0 +1,7 @@
+#**/__pycache__/
+#**/migrations/
+#db.sqlite3
+logs.log
+.vscode
+TODO
+out/

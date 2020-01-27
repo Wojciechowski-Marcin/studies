@@ -1,0 +1,3 @@
+# OLED128x64 connected to Header J4 (Spartan-3E Starter Board)
+NET "SCL"  LOC = "E8"  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6;
+NET "SDA"  LOC = "F8"  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6;

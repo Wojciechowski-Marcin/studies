@@ -1,0 +1,10 @@
+vhdtdtfi -lib work Selector.vhd -prj Test_oled -o Selector.spl -module Selector -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Selector.spl C:/XilinxPrj/OLED/Test_oled/Selector.sym 
+vhdtdtfi -lib work Selector.vhd -prj Test_oled -o Selector.spl -module Selector -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Selector.spl C:/XilinxPrj/OLED/Test_oled/Selector.sym 
+vhdtdtfi -lib work Selector.vhd -prj Test_oled -o Selector.spl -module Selector -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Selector.spl C:/XilinxPrj/OLED/Test_oled/Selector.sym 
+vhdtdtfi -lib work Selector.vhd -prj Test_oled -o Selector.spl -module Selector -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Selector.spl C:/XilinxPrj/OLED/Test_oled/Selector.sym 
+vhdtdtfi -lib work Selector.vhd -prj Test_oled -o Selector.spl -module Selector -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Selector.spl C:/XilinxPrj/OLED/Test_oled/Selector.sym 
